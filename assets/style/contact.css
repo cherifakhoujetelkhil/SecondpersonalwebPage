@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Barlow:wght@500&family=Poppins:wght@400;600&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&family=Rubik:ital@0;1&display=swap');
+
 .root
 {
-    --mainColor:#34d182;
+    --mainColor:#18D36E;
+    --textSize1:30px;
+    --textSize2:20px;
+    
 }
 *
+
 {
-    padding 0;
+    padding: 0;
     margin: 0;
     box-sizing: content-box;
+}
+body
+{
+    background-image: url("../img/bg.jpg.jpg");
+    background-size: cover;
+
 }
 .header
 {
@@ -20,12 +31,12 @@
 }
 .brandName
 {
-    font-size: 30px; 
+   font-size: var(--textSize1);
 }
 .navbarItem
 {
-    color: #fff;
-    font-size: 20px;
+    color: white;
+    font-size: var(--textSize2);
     margin: 5px;
 }
 ul{
@@ -42,10 +53,230 @@ ul{
 }
 .navbarItem>a
 {
-    color: #ffff;
+    color: white;
     text-decoration: none;
 }
 .active
 {
     border-bottom: 2px solid var(--mainColor);
 }
+.container
+{
+    height:92.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 0 0 ;
+}
+.contactContainer
+{
+    width: 80%;
+    height: 100%;
+    background-color:rgba(0, 0, 0 ,0.5);
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+}
+.container
+{
+    color: #fff;
+}
+.contactF>.contact
+{
+    font-size: var(--textSize2);
+    text-transform: uppercase;
+    
+}
+
+.contactMe
+{
+    color: #fff;
+    font-size: var(--textSize1);
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+.horizontalLine
+{
+    width: 80px;
+    height: 3px;
+    background-color: var(--mainColor);
+}
+
+.contactF
+{
+    display: flex;
+    align-items: baseline;
+    column-gap: 3px;  
+}
+
+.adressContainer,
+.profileContainer,
+.emailContainer,
+.callContainer,.form
+{
+    display:flex;
+    column-gap: 7px;
+    padding: 15px;
+    background-color: rgba(168, 168, 168, 0.3);
+
+}
+
+.contactForm
+{
+    display: grid;
+    grid-template-areas: 
+    "adressContainer profileContainer"
+    " emailContainer callContainer"
+    "form form"
+    ;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: 200px 200px 200px;
+    width: 100px;
+    height: 100px;
+    justify-content:space-between;
+    margin: 10px 0 0 0 ;
+    row-gap: 10px;
+    column-gap: 15px;
+
+
+}
+.adressContainer
+{
+    grid-area: adressContainer;
+    background-color: rgba(168, 168, 168, 0.3);
+}
+.profileContainer
+{
+    grid-area: profileContainer;
+
+}
+.emailContainer
+{
+    grid-area: emailContainer;
+}
+.callContainer
+{
+    grid-area: callContainer;
+}
+.form
+{
+    grid-area: form;
+}
+.emailContainer
+{
+    width: 40px;
+    height: 40px;
+    background-color:rgba(168, 168, 168, 0.7) ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.iconFA
+{
+    color: var(--mainColor);
+    font-size: 18px;
+}
+.adressDetails
+{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.adrrTitle
+{
+    color: #da9797;
+    
+
+}
+.adressValue
+{
+    font-weight: lighter; 
+}
+.socialValue
+{
+    display: flex;
+    column-gap: 10px;
+
+}
+.form
+{
+    display: grid;
+    grid-template-areas:
+    "yourName yourEmail"
+    "Subject Subject"
+    "Message Message"
+    ;
+    width: 100%;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px 200px ;
+    row-gap: 10px;
+    column-gap: 15px;
+}
+.yourName,.yourEmail,.Subject,.Message
+{
+    background-color:rgba(168, 168, 168, 0.7) ;
+    padding: 10px;
+
+}
+.yourName
+{
+    grid-area: yourName;
+}
+.yourEmail
+{
+    grid-area: yourEmail;
+}
+
+.Subject
+{
+    grid-area: Subject;
+}
+.Message
+{
+    grid-area: Message;
+}
+.textInput
+{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: rgba(168, 168, 168, 1);
+    font-size: 18px;
+    align-content: center;
+    
+
+   
+}
+.textInput::placeholder
+{
+    font-size: 18px;
+    text-transform: capitalize;
+
+}
+.textInput:focus
+{
+    border: none;
+    outline: none;
+}
+.sendMessage
+{
+    margin: auto;
+    width: 150px;
+    height: 40px;
+    padding: 3px;
+    background-color: var(--mainColor);
+
+   
+}
+.Message
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
