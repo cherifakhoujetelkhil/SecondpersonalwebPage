@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Barlow:wght@500&family=Poppins:wght@400;600&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&family=Rubik:ital@0;1&display=swap');
+.root
+{
+    --mainColor:#34d182;
+}
+*
+{
+    padding 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+.header
+{
+    background-color:black;
+    color: #fff;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.brandName
+{
+    font-size: 30px; 
+}
+.navbarItem
+{
+    color: #fff;
+    font-size: 20px;
+    margin: 5px;
+}
+ul{
+    display: flex;
+   list-style-type: none;
+   column-gap: 10px ;
+}
+.navbar
+{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5px;
+}
+.navbarItem>a
+{
+    color: #ffff;
+    text-decoration: none;
+}
+.active
+{
+    border-bottom: 2px solid var(--mainColor);
+}
