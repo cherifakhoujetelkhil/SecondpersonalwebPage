@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Barlow:wght@500&family=Poppins:wght@400;600&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&family=Rubik:ital@0;1&display=swap');
+
+:root
+{
+    --textfamilt:'Barlow Semi Condensed', sans-serif;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+.SignIn
+{
+height: 100%;
+background-color: white;
+width: 45%;
+
+}
+.helloMessage
+{
+height: 100%;
+background-color: #18D36E;
+width: 55%;
+border-top-left-radius: 30%;
+border-bottom-left-radius: 30%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+row-gap: 20px;
+
+
+}
+.Hellotitle
+{
+    font-size: 60px;
+    font-family: var(--textfamilt);
+    color: #fff;
+}
+.Helloparagraph
+{
+    font-size: 20px;
+    font-family: var(--textfamilt);
+    color:#fff
+    
+}
+.btnSignUp
+{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #18D36E;
+    font-size: 20px;
+    font-family: var(--textfamilt);
+    border-radius: 5px;
+}
+.btnSignUp:hover
+{
+background-color: #fff;
+color: #18D36E;
+}
+.SignIn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    row-gap: 30px;
+
+    
+}
+input
+{
+    display: block;
+    
+}
+.signInTitle
+{
+    font-size: 60px;
+}
+.iconContainer
+{
+    display: flex;
+    
+}
+.icon
+{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+
+}
+.fa-brands
+{
+    font-size: 20px;
+    color: #18D36E;
+
+}
+.signInMessage,.forgetPassword
+{
+    color: gray;
+    font-family: var(--textfamilt);
+    font-size: 25px;
+    text-align: center;
+}
+input[type=email],input[type=password]
+{
+    width: 300px;
+    height: 40px;
+    margin: 5px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 15px;
+
+    
+}
+input[type=email]:focus,input[type=password]:focus
+
+{
+    outline-color: #18D36E;
+}
+.submitButton
+{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #18D36E;
+    font-size: 20px;
+    font-family: var(--textfamilt);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
